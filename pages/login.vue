@@ -176,7 +176,7 @@ export default {
           type: "error",
           title: "Invalid username or password",
           showConfirmButton: false,
-          timer: 3000,
+          timer: 8000,
         });
       } finally {
         this.loading = false;
@@ -205,7 +205,11 @@ export default {
     ),
     radial-gradient(circle at top, rgba(53, 127, 255, 0.22), transparent 32%),
     radial-gradient(circle at 20% 80%, rgba(0, 229, 255, 0.1), transparent 28%),
-    radial-gradient(circle at 80% 20%, rgba(255, 167, 38, 0.14), transparent 24%),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 167, 38, 0.14),
+      transparent 24%
+    ),
     url("/background.jpg") center center / cover no-repeat,
     linear-gradient(
       135deg,
@@ -228,29 +232,34 @@ export default {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(3, 8, 15, 0.74), rgba(3, 8, 15, 0.24)),
-    radial-gradient(circle at center, transparent 36%, rgba(2, 7, 17, 0.54) 100%);
+    radial-gradient(
+      circle at center,
+      transparent 36%,
+      rgba(2, 7, 17, 0.54) 100%
+    );
 }
 
 .stars {
-  background-image: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0.8) 1px,
-      transparent 1.5px
-    ),
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1.5px),
     radial-gradient(circle, rgba(111, 199, 255, 0.5) 1px, transparent 1.5px),
     radial-gradient(circle, rgba(255, 196, 112, 0.35) 1px, transparent 1.5px);
-  background-size: 160px 160px, 220px 220px, 280px 280px;
-  background-position: 0 0, 40px 70px, 110px 30px;
+  background-size:
+    160px 160px,
+    220px 220px,
+    280px 280px;
+  background-position:
+    0 0,
+    40px 70px,
+    110px 30px;
   opacity: 0.18;
 }
 
 .grid {
   inset: auto 0 0 0;
   height: 42vh;
-  background-image: linear-gradient(
-      rgba(77, 195, 255, 0.18) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(rgba(77, 195, 255, 0.18) 1px, transparent 1px),
     linear-gradient(90deg, rgba(77, 195, 255, 0.18) 1px, transparent 1px);
   background-size: 48px 48px;
   transform: perspective(240px) rotateX(72deg);
@@ -298,8 +307,10 @@ export default {
     rgba(16, 33, 64, 0.9),
     rgba(7, 18, 36, 0.72)
   );
-  box-shadow: 0 0 0 1px rgba(126, 222, 255, 0.18),
-    0 0 30px rgba(0, 229, 255, 0.18), inset 0 0 24px rgba(255, 255, 255, 0.04);
+  box-shadow:
+    0 0 0 1px rgba(126, 222, 255, 0.18),
+    0 0 30px rgba(0, 229, 255, 0.18),
+    inset 0 0 24px rgba(255, 255, 255, 0.04);
 }
 
 .brand-logo__img {
@@ -336,8 +347,10 @@ export default {
     rgba(10, 23, 43, 0.84),
     rgba(5, 13, 26, 0.92)
   ) !important;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45),
-    0 0 0 1px rgba(124, 221, 255, 0.08), 0 0 40px rgba(0, 229, 255, 0.12);
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(124, 221, 255, 0.08),
+    0 0 40px rgba(0, 229, 255, 0.12);
   backdrop-filter: blur(14px);
 }
 
@@ -433,7 +446,8 @@ export default {
     #7ee7ff 35%,
     #ffb74d 100%
   ) !important;
-  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.22),
+  box-shadow:
+    0 12px 30px rgba(0, 229, 255, 0.22),
     0 8px 20px rgba(255, 167, 38, 0.18);
 }
 

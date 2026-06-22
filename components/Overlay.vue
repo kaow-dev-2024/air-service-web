@@ -28,7 +28,7 @@ export default {
       clearTimeout(this.closeTimer);
       this.closeTimer = setTimeout(() => {
         this.$emit("update:overlay", false);
-      }, 3000);
+      }, 8000);
     },
   },
 

@@ -200,6 +200,6 @@ export default {
 
   server: {
     host: process.env.NUXT_HOST || "0.0.0.0",
-    port: process.env.NUXT_PORT || 3000,
+    port: process.env.NUXT_PORT || 8000,
   },
 };
