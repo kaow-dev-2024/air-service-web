@@ -6,7 +6,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s",
-    title: "PAiFIDS",
+    title: `${process.env.NUXT_APP}`,
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -78,7 +78,7 @@ export default {
       theme_color: "#050607",
     },
     manifest: {
-      name: "PAiFIDS",
+      name: `${process.env.NUXT_APP}`,
       short_name: "PAI FIDS",
       lang: "en",
       display: "standalone",
